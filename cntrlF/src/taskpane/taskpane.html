@@ -1,0 +1,22 @@
+<div style="font-family: system-ui; padding: 12px;">
+  <h2>cntrlF</h2>
+  <button id="connect">Start Listening</button>
+  <button id="disconnect" disabled>Stop</button>
+
+  <div style="margin-top:12px">
+    <label>Current transcript:</label>
+    <div id="live" style="border:1px solid #ccc; padding:8px; min-height:48px;"></div>
+  </div>
+
+  <div style="margin-top:12px">
+    <label>Auto-search threshold (chars):</label>
+    <input id="threshold" type="number" min="4" value="6" />
+  </div>
+
+  <div style="margin-top:12px">
+    <button id="searchNow">Search current transcript</button>
+    <button id="clearHighlights">Clear highlights</button>
+  </div>
+
+  <div id="status" style="margin-top:12px;color:#666"></div>
+</div>
